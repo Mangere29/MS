@@ -810,25 +810,31 @@
 					Contact Us
 				  </h2>
 				</div>
-				<form action="">
+				<form onsubmit="sendToWhatsApp(); return false;">
 				  <div>
-					<input type="text" placeholder="Name" />
-				  </div>
-				  <div>
-					<input type="email" placeholder="Email" />
+					<input type="text" id="name" required placeholder="Enter your name">
 				  </div>
 				  <div>
-					<input type="text" placeholder="Phone Number" />
+					<textarea id="message" required placeholder="Type your message here"></textarea>
 				  </div>
-				  <div>
-					<input type="text" class="message-box" placeholder="Message" />
-				  </div>
-				  <div class="d-flex ">
-					<button>
-					  Send
-					</button>
-				  </div>
+				  <button type="submit" style="background-color: #ff2953; color: white; padding: 10px; border: none; border-radius: 0px; cursor: pointer;">
+					Send via WhatsApp
+				  </button>
 				</form>
+
+				<script>
+					function sendToWhatsApp() {
+						var name = document.getElementById("name").value;
+						var message = document.getElementById("message").value;
+				
+						var phoneNumber = "211928514680"; // Replace with your WhatsApp number in international format without +
+				
+						var url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent("Sap there, my name is " + name + ". " + message);
+				
+						window.open(url, "_blank");
+					}
+				</script>
+				
 			  </div>
 		  </div>
 		</div>
@@ -879,6 +885,8 @@
 			</a>
 		  </div>
 		</div>
+		
+
 	  </section>
 	</section>
 	
