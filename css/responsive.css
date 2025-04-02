@@ -55,7 +55,14 @@
 
 @media (max-width: 420px) {
     .slider_section .detail-box h1 {
-        letter-spacing: .3rem;
+        letter-spacing: .0rem;
+        font-size: 39px;
+    }
+}
+
+@media (max-width: 420px) {
+    .slider_section .mangere {
+        vertical-align: middle;
     }
 }
 

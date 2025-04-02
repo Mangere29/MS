@@ -8379,13 +8379,6 @@ h6
   font-size: 24px;
   text-transform: uppercase; }
 
-.mangere img {
-  width: 430px;
-  height: 430px;
-  object-fit: cover;
-  border-radius: 5px;
-}  
-
 .hero h3.vr {
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: tb-lr;
@@ -10040,7 +10033,12 @@ a:focus {
 .slider_section .detail-box {
   text-align: center;
 }
-
+.slider_section .mangere img {
+  width: 340px;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 5px;
+}  
 .slider_section .detail-box h1,
 .slider_section .detail-box h2,
 .slider_section .detail-box h3 {
